@@ -1,10 +1,12 @@
 import './App.css';
+import BalanceComponent from './components/balance-component';
 
 function App() {
   return (
     <div className="App">
-      <h1>Oscar Anillo</h1>
-      <p>Web UI Developer</p>
+      <div className="container">
+        <BalanceComponent />
+      </div>
     </div>
   );
 }

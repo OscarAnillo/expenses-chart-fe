@@ -11,3 +11,30 @@
   height: 100vh;
   font-family: 'DM Sans', sans-serif;
 }
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+/* Balance Component */
+.balance {
+  background-color: hsl(10, 79%, 65%);
+  border-radius: 10px;
+}
+.balance-row {
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 0;
+  text-align: left;
+}
+.balance-row p {
+  color: #fff;
+  font-weight: 400;
+}
+.balance-row h2 {
+  color: #fff;
+  font-weight: 700;
+}
