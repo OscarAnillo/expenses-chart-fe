@@ -27,7 +27,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1em 0;
+  padding: 1.32em 0;
   text-align: left;
 }
 .balance-row p {
@@ -37,4 +37,92 @@
 .balance-row h2 {
   color: #fff;
   font-weight: 700;
+}
+
+/* Chart Component */
+.chart {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 1.5em 0;
+}
+.chart-container {
+  width: 90%;
+  margin: auto;
+}
+.chart-container h1 {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  padding-bottom: 2em;
+  color: hsl(25, 47%, 15%);
+}
+
+.chart-row {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+.chart-row p {
+  font-weight: 400;
+  color: hsl(28, 10%, 53%);
+  padding: 1em 0;
+  font-size: 12px;
+}
+.chart-row .monday {
+  background-color: hsl(10, 79%, 65%);
+  height: 50px;
+  width: 30px;
+  border-radius: 2px;
+  padding-bottom: .5em;
+}
+.chart-row .tuesday {
+  background-color: hsl(10, 79%, 65%);
+  height: 100px;
+  width: 30px;
+  border-radius: 2px;
+}
+.chart-row .wednsday {
+  background-color: hsl(186, 34%, 60%);
+  height: 150px;
+  width: 30px;
+  border-radius: 2px;
+}
+.chart-row .thursday {
+  background-color: hsl(10, 79%, 65%);
+  height: 85px;
+  width: 30px;
+  border-radius: 2px;
+}
+.chart-row .friday {
+  background-color: hsl(10, 79%, 65%);
+  height: 60px;
+  width: 30px;
+  border-radius: 2px;
+}
+.chart-row .saturday {
+  background-color: hsl(10, 79%, 65%);
+  height: 130px;
+  width: 30px;
+  border-radius: 2px;
+}
+.chart-row .sunday {
+  background-color: hsl(10, 79%, 65%);
+  height: 70px;
+  width: 30px;
+  border-radius: 2px;
+}
+.chart-container .hr {
+  border: 1px solid rgb(254, 247, 239);
+}
+.chart-container .total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5em 0;
+}
+.chart-container .total-row h1 {
+  padding-bottom: 0;
+}
+.chart-container .total-row h4 {
+  text-align: right;
 }
