@@ -11,6 +11,8 @@
   height: 100vh;
   position: relative;
   font-family: 'DM Sans', sans-serif;
+  background-image: url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg");
+  background-size: contain;
 }
 .container {
   width: 90%;
@@ -140,6 +142,12 @@
 }
 
 @media(min-width: 768px) {
+  .App {
+    background-image: url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
   /* Balance Component */
 .balance {
   border-radius: 20px;
