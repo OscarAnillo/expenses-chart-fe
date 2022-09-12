@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -10,8 +10,8 @@
   background-color: hsl(27, 66%, 92%);
   height: 100vh;
   position: relative;
-  font-family: 'DM Sans', sans-serif;
-  background-image: url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg");
+  font-family: "DM Sans", sans-serif;
+  background-image: url("/public/images/Animation-Background.svg");
   background-size: contain;
 }
 .container {
@@ -82,7 +82,7 @@
   height: 50px;
   width: 30px;
   border-radius: 2px;
-  padding-bottom: .5em;
+  padding-bottom: 0.5em;
 }
 .chart-row .tuesday {
   background-color: hsl(10, 79%, 65%);
@@ -141,86 +141,94 @@
   font-weight: 700;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .App {
-    background-image: url("https://flevix.com/wp-content/uploads/2020/01/Black-Animation-Background.svg");
+    background-image: url("/public/images/Animation-Background.svg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
   /* Balance Component */
-.balance {
-  border-radius: 20px;
-}
-.balance-row {
-  width: 90%;
-  padding: 1.8em 0;
-}
-.balance-row h2 {
-  font-size: 2rem;
-}
+  .balance {
+    border-radius: 20px;
+    transition: all .3s ease;
+    background-size: 200% 100%;
+    
+  }
+  .balance:hover {  
+    background-position: 100% 0;
+    transition: all .3s ease;
+    background-image: linear-gradient(to right, #0b9ea3, #3cbaba, #30c9dd, #2b9ab6);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 161, 0.75);
+  }
+  .balance-row {
+    width: 90%;
+    padding: 1.8em 0;
+  }
+  .balance-row h2 {
+    font-size: 2rem;
+  }
 
-/* Chart Component */
-.chart {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 1.5em 0;
-}
-.chart-container h1 {
-  font-size: 2rem;
-}
-.chart-row p {
-  font-size: 14px;
-}
-.chart-row .monday {
-  width: 52px;
-  border-radius: 5px;
-}
-.chart-row .tuesday {
-  width: 52px;
-  border-radius: 5px;
-}
-.chart-row .wednsday {
-  width: 52px;
-  border-radius: 5px;
-}
-.chart-row .thursday {
-  width: 52px;
-  border-radius: 5px;
-}
-.chart-row .friday {
-  width: 52px;
-  border-radius: 5px;
-}
-.chart-row .saturday {
-  width: 52px;
-  border-radius: 5px;
-}
-.chart-row .sunday {
-  width: 52px;
-  border-radius: 5px;
-}
-.chart-container .hr {
-  border: 1px solid rgb(254, 247, 239);
-}
-.chart-container .total-row {
-  display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
-  margin: 1.5em 0;
-}
-.chart-container .total-row p {
-  font-weight: 700;
-  text-align: left;
-  color: hsl(28, 10%, 53%);
-}
-.chart-container .total-row h1 {
-  font-size: 3rem;
-  font-weight: 700;
-}
-.chart-container .total-row h4 {
-  text-align: right;
-  font-weight: 700;
-}
-
+  /* Chart Component */
+  .chart {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 1.5em 0;
+  }
+  .chart-container h1 {
+    font-size: 2rem;
+  }
+  .chart-row p {
+    font-size: 14px;
+  }
+  .chart-row .monday {
+    width: 52px;
+    border-radius: 5px;
+  }
+  .chart-row .tuesday {
+    width: 52px;
+    border-radius: 5px;
+  }
+  .chart-row .wednsday {
+    width: 52px;
+    border-radius: 5px;
+  }
+  .chart-row .thursday {
+    width: 52px;
+    border-radius: 5px;
+  }
+  .chart-row .friday {
+    width: 52px;
+    border-radius: 5px;
+  }
+  .chart-row .saturday {
+    width: 52px;
+    border-radius: 5px;
+  }
+  .chart-row .sunday {
+    width: 52px;
+    border-radius: 5px;
+  }
+  .chart-container .hr {
+    border: 1px solid rgb(254, 247, 239);
+  }
+  .chart-container .total-row {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin: 1.5em 0;
+  }
+  .chart-container .total-row p {
+    font-weight: 700;
+    text-align: left;
+    color: hsl(28, 10%, 53%);
+  }
+  .chart-container .total-row h1 {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  .chart-container .total-row h4 {
+    text-align: right;
+    font-weight: 700;
+  }
 }
