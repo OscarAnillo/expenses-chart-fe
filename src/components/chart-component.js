@@ -1,4 +1,17 @@
+import { useState } from 'react';
+
 export default function ChartComponent() {
+    const [showNumWed, setShowNumWed] = useState(false);
+    const [showNumThu, setShowNumThu] = useState(false);
+
+    const mouseOverHandlerWed = () => {
+        setShowNumWed(!showNumWed);
+    }
+
+    const mouseOverHandlerThu = () => {
+        setShowNumThu(!showNumThu)
+    }
+
   return (
     <div className="chart">
       <div className="chart-container">
@@ -13,11 +26,13 @@ export default function ChartComponent() {
                 <p>tue</p>
             </div>
             <div>
-                <div className="wednsday"></div>
+                {showNumWed ? <div className="wed-num">$52.36</div> : ''}
+                <div className="wednsday" onMouseEnter={mouseOverHandlerWed} onMouseLeave={mouseOverHandlerWed}></div>
                 <p>wed</p>
             </div>
             <div>
-                <div className="thursday"></div>
+                {showNumThu ? <div className="thu-num">$31.07</div> : ''}
+                <div className="thursday" onMouseEnter={mouseOverHandlerThu} onMouseLeave={mouseOverHandlerThu}></div>
                 <p>thu</p>
             </div>
             <div>

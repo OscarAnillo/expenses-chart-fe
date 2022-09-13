@@ -70,6 +70,7 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
+  position: relative;
 }
 .chart-row p {
   font-weight: 400;
@@ -90,11 +91,31 @@
   width: 30px;
   border-radius: 2px;
 }
+.chart-row .wed-num {
+  font-size: 12px;
+  color: #fff;
+  background-color: hsl(25, 47%, 15%);
+  padding: .5em;
+  border-radius: 5px;
+  position: absolute;
+  top: -35px;
+  left: 27%;
+}
 .chart-row .wednsday {
   background-color: hsl(186, 34%, 60%);
   height: 150px;
   width: 30px;
   border-radius: 2px;
+}
+.chart-row .thu-num {
+  font-size: 12px;
+  color: #fff;
+  background-color: hsl(25, 47%, 15%);
+  padding: .5em;
+  border-radius: 5px;
+  position: absolute;
+  top: 30px;
+  left: 43%;
 }
 .chart-row .thursday {
   background-color: hsl(10, 79%, 65%);
@@ -189,13 +210,35 @@
     width: 52px;
     border-radius: 5px;
   }
+  .chart-row .wed-num {
+    left: 30%;
+  }
   .chart-row .wednsday {
     width: 52px;
     border-radius: 5px;
+    transition: all .3s ease;
+    background-size: 200% 100%;
+  }
+  .chart-row .wednsday:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    background-image: linear-gradient(to top, #0b9ea3, #3cbaba, #30c9dd, #2b9ab6);
+    box-shadow: 0 4px 15px 0 rgba(23, 168, 161, 0.75);
+  }
+  .chart-row .thu-num {
+    left: 45%;
   }
   .chart-row .thursday {
     width: 52px;
     border-radius: 5px;
+    transition: all .3s ease;
+    background-size: 200% 100%;
+  }
+  .chart-row .thursday:hover {
+    cursor: pointer;
+    background-position: 100% 0;
+    background-image: linear-gradient(to top, #a33b0b, #ba4f3c, #dd6130, #b63b2b);
+    box-shadow: 0 4px 15px 0 rgba(168, 33, 23, 0.75);
   }
   .chart-row .friday {
     width: 52px;
