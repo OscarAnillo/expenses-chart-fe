@@ -1,11 +1,14 @@
-import logo from './logo.svg';
 import './App.css';
+import BalanceComponent from './components/balance-component';
+import ChartComponent from './components/chart-component';
 
 function App() {
   return (
     <div className="App">
-      <h1>Oscar Anillo</h1>
-      <p>Web UI Developer</p>
+      <div className="container">
+        <BalanceComponent />
+        <ChartComponent />
+      </div>
     </div>
   );
 }
